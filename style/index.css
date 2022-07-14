@@ -1,0 +1,117 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.todo__submit-btn {
+  background-color: blue;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.todo__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.todo__list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.todo__list-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__list-active-task,
+.todo__list-inactive-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px;
+}
+
+.todo__list-active-task li,
+.todo__list-inactive-task li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo__list-active-task .task,
+.todo__list-inactive-task .task {
+  text-align: center;
+  width: 200px;
+  border: none;
+  background: none;
+}
+
+.todo__list-inactive-task .task--done {
+  text-decoration: line-through;
+}
+
+.todo__list-active-task .btn--edit,
+.todo__list-active-task .btn--delete,
+.todo__list-inactive-task .btn--edit,
+.todo__list-inactive-task .btn--delete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.todo__list-active-task .btn--edit,
+.todo__list-inactive-task .btn--edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/edit.png");
+  background-color: blue;
+  height: 28px;
+  width: 28px;
+}
+
+.todo__list-active-task .btn--delete,
+.todo__list-inactive-task .btn--delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/delete.png");
+  background-color: red;
+  height: 28px;
+  width: 28px;
+}
+
+.todo__list-active-task .btn--save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/save.png");
+  background-color: blue;
+  height: 28px;
+  width: 28px;
+  margin: 5px;
+}
